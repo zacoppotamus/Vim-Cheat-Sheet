@@ -1,0 +1,66 @@
+#! Vim Cheat Sheet
+
+x - delete character under cursor
+:q! - exit without saving
+A - append text
+a - append text AFTER cursor
+:wq - save file and exit
+dw - delete word
+d$ - delete to the end of the line
+
+Some Motions:
+	w - until the start of the next word, EXCLUDING its first character
+	e - to the end of the current word, INCLUDING the last character
+	$ - to the end of the line, INCLUDING the last character
+
+0 - move to the start of the line
+dd - delete whole line
+2dd - delete 2 lines
+u - undo
+U - bring line to previous state
+ctrl+r - redo
+p - put characters in register in the line under the cursor
+r$ - replace character under the cursor with $
+R - replace more than one character
+ce - change until the end of the word
+cw - change until the start of the next word
+c$ - change until the end of the line
+ctrl+g - show location in the file and the file status
+$G or $gg - go to line number '$'
+G - move to the bottom of the file
+gg - move to the top of the file
+/ - search (type n to search for the same phrase forwards or N for backkwards)
+? - search in backwards direction
+ctrl+i - go back to where you came from
+ctrl+o - go forward
+% - find a matching (,{,[
+:s/old/new/g - replace 'old' with 'new'. 'g' flag means global
+:#,#s/old/new/g - replace between specified lines
+:s/old/new/gc - replace with prompt
+:#s/old/new/g - replace all occurences
+/ignore\c - case insensitive search for ignore
+:set ic - set 'ignore case' option
+:set noic - disable 'ignore case'
+:set hls - set higlight search option
+:nohlsearch - disable highlight search
+:set is - set partial match search
+:! - append external command to execute it
+:w TEST - save vim file as TEST 
+v - visual mode
+:r TEST - retrieve TEST file
+o - open line below cursor
+O - open line above cursor
+y - copy text (yank)
+p - paste text
+yw - yank one word
+:help - open help window
+:e ~/.vimrc - start editing the "vimrc" file
+:r $VIMRUNTIME/vimrx_example.vim - read the example "vimrc" file contents
+:set nocp - set to non-compatible mode
+
+•When typing a ':' command press ctrl+d to see possible completions
+
+:help user-manual - access the user manual
+ctrl+w - switch windows
+
+"/usr/share/vim/vim73/doc/" - Vim user manuals path
