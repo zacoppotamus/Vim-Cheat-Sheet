@@ -1,0 +1,1 @@
+This is a basic reference for all the **vim** commands taught in **vimtutor**.
